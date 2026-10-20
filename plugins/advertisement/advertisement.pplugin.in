@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${ADVERTISEMENT_VERSION}",
+	"name": "advertisement",
+	"description": "Periodic chat, centre, alert, centre-HTML and console messages from configs/advertisement/advertisement.ini: every \"update time\" seconds the next entry of the \"list\" section is shown to everyone (\"text\" to chat with colour tags and \\n line breaks, the legacy numeric \"dest\" still picks the sink, \"center\"/\"hud\"/\"html\"/\"console\" go to the centre of the screen, the alert line, the centre HTML panel and the console). The config is re-read on every map start. A port of the Metamod:Source plugin 'advertisement'.",
+	"author": "ezekutor, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/advertisement",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
