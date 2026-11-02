@@ -2,13 +2,10 @@
     global:
         Plugify_*;
 
-        /* s2sdk binding slots (defined by s2sdk_bindings, filled by the plugify module) */
+        /* s2sdk binding slots (defined by s2sdk_bindings, filled by the plugify module from the
+           s2sdk dependency). No other plugin API is consumed: advertisement is pure s2sdk and has
+           no hudmenu/pisexcompat bindings. */
         __s2sdk_*;
-
-        /* hudmenu binding slots (defined by hudmenu_bindings, filled by the plugify module from
-           the hudmenu plugin's exported GetClientMenuType/SetClientMenuType); pisexcompat links
-           them into every consumer, so they are exported here as well */
-        __hudmenu_*;
 
         /* No exported methods: advertisement exposes nothing to other plugins. */
 
